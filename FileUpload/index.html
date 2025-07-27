@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara ERP - Navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <aside>
+        <nav id="desktopNav" class="navigation">
+            
+            <div class="nav-collapsed-view">
+                <img src="../../assets/logo.svg" alt="ZARA Icon" class="nav-logo-collapsed">
+                
+                <a href="#" id="nav-expand-btn" class="icon-light-bg" title="Expand Menu">
+                    <img src="../../assets/home.png" alt="home icon">
+                </a>
+
+                <div class="icon-light-bg user-icon">
+                    <img src="../../assets/user.png" alt="user icon">
+                </div>
+            </div>
+
+            <div class="nav-expanded-view">
+                <div class="nav-header">
+                    <img src="../../assets/logo.svg" alt="ZARA Logo" id="nav-collapse-btn" class="nav-logo-expanded" title="Collapse Menu">
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">
+                        <img src="../../assets/dashboard.svg" alt="dashboard icon">
+                        <span>Dashboard</span>
+                    </a>
+                    <div class="nav-dropdown">
+                        <div class="dropdown-toggle">
+                            <div class="dropdown-title">
+                                <img src="../../assets/campagin.svg" alt="campaign icon">
+                                <span>Campaign</span>
+                            </div>
+                            <img src="../../assets/dropdown.svg" class="dropdown-arrow" alt="arrow">
+                        </div>
+                        <div class="dropdown-menu">
+                            <a href="#">My Campaigns</a>
+                            <a href="#">Import Campaigns</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link">
+                        <img src="../../assets/asset.svg" alt="asset icon">
+                        <span>Asset Library</span>
+                    </a>
+                    <a href="/Supplier Hub Page/index.html" class="nav-link">
+                        <img src="../../assets/supplier.svg" alt="supplier icon">
+                        <span>Supplier Hub</span>
+                    </a>
+                </div>
+                <div class="nav-footer">
+                    <div class="nav-profile">
+                        <div class="icon-pp">
+                            <img src="../../assets/USER-white.svg" alt="user icon">
+                        </div>
+                        <span>Jane Doe</span>
+                    </div>
+                    <button class="nav-logout">Logout</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="navMobile">
+            <div class="nav-mobile-header">
+                <img src="../../assets/logo.svg" alt="logo" class="nav-mobile-logo">
+                <span class="nav-mobile-close" title="Close Menu">&times;</span>
+            </div>
+            <div class="nav-mobile-links">
+                <a href="#" class="nav-mobile-link"><img src="../../assets/dashboard.svg" alt="icon"><span>Dashboard</span></a>
+                <div class="nav-mobile-dropdown">
+                    <div class="dropdown-toggle">
+                        <div class="dropdown-title"><img src="../../assets/campagin.svg" alt="icon"><span>Campaign</span></div>
+                        <img src="../../assets/dropdown.svg" class="dropdown-arrow" alt="arrow">
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="#">My Campaigns</a>
+                        <a href="#">Import Campaigns</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-mobile-link"><img src="../../assets/asset.svg" alt="icon"><span>Asset Library</span></a>
+                <a href="#" class="nav-mobile-link"><img src="../../assets/supplier.svg" alt="icon"><span>Supplier Hub</span></a>
+            </div>
+            <div class="nav-mobile-footer">
+                <div class="nav-mobile-profile">
+                    <div class="icon-pp">
+                        <img src="../../assets/USER-white.svg" alt="user icon">
+                    </div>
+                    <span>Jane Doe</span>
+                </div>
+                <button class="nav-mobile-logout">Logout</button>
+            </div>
+        </div>
+    </aside>
+    <main class="main-content">
+        <div class="page-content-wrapper">
+        
+                    <div class="camp-manager box-15">
+            <div class="hamburger" id="hamburger" title="Open Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+                <div class="title-camp">
+                    Campaign Manager <span><img class="right-arrow" src="./icon/material-round-keyboard-arrow-right.svg" alt=""></span>
+                    Clearance Event ,Campaign Ref: ,Campaign No: 1806
+                </div>
+                            <div class="header-cart-icon">
+                <img src="../assets/Icon%20material-outline-shopping-cart.svg" alt="cart">
+            </div>
+                <div class="shortcut fav-ic hb-767">
+                    <div class="fav-ic">
+                        <div class="icons">
+                            <img src="../assets/-bell.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="fav-ic">
+                        <div class="icons">
+                            <img src="../assets/pin.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="fav-ic">
+                        <div class="icons">
+                            <img src="../assets/Icon material-outline-shopping-cart.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="fav-ic">
+                        <div class="icons">
+                            <img src="../assets/help-outline.svg" alt="">
+                        </div>
+                    </div>
+
+
+
+                    <div class="fav-ic">
+                        <div class="icons">
+                            <img src="../assets/Icon akar-newspaper.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+<script src="../script.js"></script>
+</html>
