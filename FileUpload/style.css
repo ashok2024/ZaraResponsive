@@ -1,5 +1,288 @@
-.right-arrow{
+.right-arrow {
     position: relative;
     top: 3px;
     padding: 0 14px;
+}
+
+.current-open-title {
+    color: #0a0a0a;
+    font-weight: 500;
+}
+
+.main-content-bx {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 767px) {
+    .main-content-bx {
+        border: 1px solid #dadcf8;
+        box-shadow: 0 0 7.5px rgba(0, 0, 0, .051);
+        border-radius: 12px;
+        padding: 24px;
+    }
+}
+
+.camp-manager-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.camp-manager-links li {
+    display: inline-block;
+    padding: 0 15px;
+    border-right: 1px solid #ccc;
+}
+
+.camp-manager-links li a {
+    text-decoration: none;
+    color: rgba(28, 50, 88, 0.5);
+}
+
+.camp-manager-links li a:hover {
+    color: rgb(28, 50, 88);
+    font-weight: 700;
+}
+
+.camp-manager-links li:last-child {
+    border-right: none;
+}
+
+.camp-manager-links a.active {
+    font-weight: 700;
+    color: #1C3258;
+}
+
+.record-btn {
+
+    width: 121px;
+    height: 38px;
+    border-radius: 18px;
+    background-color: #1C3258;
+    border: none;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+}
+
+.record-btn img {
+    padding-right: 12px;
+}
+
+.record-box {
+    margin: auto;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ======== MODAL/POPUP STYLES (Bottom-to-Up Animation) ======== */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.modal-container.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content-popup {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 550px;
+    transform: translateY(50px);
+    transition: transform 0.4s ease;
+}
+
+.modal-container.active .modal-content-popup {
+    transform: translateY(0);
+}
+
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.modal-close-btn {
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modal-body .form-group {
+    margin-bottom: 15px;
+}
+
+.modal-body .form-group-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-body label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.modal-body input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.category-select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-new-category-btn {
+    background: none;
+    border: none;
+    color: #1C3258;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.add-new-category-btn img {
+    width: 16px;
+}
+
+.drag-drop-area {
+    border: 2px dashed #d0d0d0;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.upload-icon-style {
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.drag-drop-area p {
+    margin: 0 0 10px 0;
+    color: #555;
+    font-weight: 500;
+}
+
+.drag-drop-area span {
+    color: #999;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.choose-file-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.modal-footer button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+.modal-footer .btn-primary {
+    background-color: #1C3258;
+    color: #fff;
+}
+
+.category-select label {
+    display: none;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 1025px) {
+
+    .right-arrow,
+    .current-open-title {
+        display: none;
+    }
+
+    .category-select label {
+        display: inline-block;
+        width: 132px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-content-wrapper {
+        height: 100%;
+    }
+
+    .camp-manager-links li a {
+        font-size: 14px;
+    }
+
+    .camp-manager-links li {
+        padding: 0 4px;
+    }
 }
