@@ -14,13 +14,8 @@
     height: 100%;
 }
 
-@media (min-width: 767px) {
-    .main-content-bx {
-        border: 1px solid #dadcf8;
-        box-shadow: 0 0 7.5px rgba(0, 0, 0, .051);
-        border-radius: 12px;
-        padding: 24px;
-    }
+.mb-8 {
+    margin-bottom: 8px;
 }
 
 .camp-manager-links ul {
@@ -255,11 +250,6 @@
 .category-select label {
     display: none;
 }
-
-.mb-8 {
-    margin-bottom: 8px;
-}
-
 @media (max-width: 1025px) {
 
     .right-arrow,
@@ -284,5 +274,15 @@
 
     .camp-manager-links li {
         padding: 0 4px;
+    }
+}
+
+
+@media (min-width: 767px) {
+    .main-content-bx {
+        border: 1px solid #dadcf8;
+        box-shadow: 0 0 7.5px rgba(0, 0, 0, .051);
+        border-radius: 12px;
+        padding: 24px;
     }
 }
