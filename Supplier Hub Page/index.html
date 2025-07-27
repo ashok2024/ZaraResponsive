@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara ERP - Navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="supplier.css">
+</head>
+
+<body>
+    <aside>
+        <nav id="desktopNav" class="navigation">
+
+            <div class="nav-collapsed-view">
+                <img src="../assets/logo.svg" alt="ZARA Icon" class="nav-logo-collapsed">
+
+                <a href="#" id="nav-expand-btn" class="icon-light-bg" title="Expand Menu">
+                    <img src="../assets/home.png" alt="home icon">
+                </a>
+
+                <div class="icon-light-bg user-icon">
+                    <img src="../assets/user.png" alt="user icon">
+                </div>
+            </div>
+
+            <div class="nav-expanded-view">
+                <div class="nav-header">
+                    <img src="../assets/logo.svg" alt="ZARA Logo" id="nav-collapse-btn" class="nav-logo-expanded"
+                        title="Collapse Menu">
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">
+                        <img src="../assets/dashboard.svg" alt="dashboard icon">
+                        <span>Dashboard</span>
+                    </a>
+                    <div class="nav-dropdown">
+                        <div class="dropdown-toggle">
+                            <div class="dropdown-title">
+                                <img src="../assets/campagin.svg" alt="campaign icon">
+                                <span>Campaign</span>
+                            </div>
+                            <img src="../assets/dropdown.svg" class="dropdown-arrow" alt="arrow">
+                        </div>
+                        <div class="dropdown-menu">
+                            <a href="#">My Campaigns</a>
+                            <a href="#">Import Campaigns</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link">
+                        <img src="../assets/asset.svg" alt="asset icon">
+                        <span>Asset Library</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <img src="../assets/supplier.svg" alt="supplier icon">
+                        <span>Supplier Hub</span>
+                    </a>
+                </div>
+                <div class="nav-footer">
+                    <div class="nav-profile">
+                        <div class="icon-pp">
+                            <img src="../assets/USER-white.svg" alt="user icon">
+                        </div>
+                        <span>Jane Doe</span>
+                    </div>
+                    <button class="nav-logout">Logout</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="navMobile">
+            <div class="nav-mobile-header">
+                <img src="../assets/logo.svg" alt="logo" class="nav-mobile-logo">
+                <span class="nav-mobile-close" title="Close Menu">&times;</span>
+            </div>
+            <div class="nav-mobile-links">
+                <a href="#" class="nav-mobile-link"><img src="../assets/dashboard.svg"
+                        alt="icon"><span>Dashboard</span></a>
+                <div class="nav-mobile-dropdown">
+                    <div class="dropdown-toggle">
+                        <div class="dropdown-title"><img src="../assets/campagin.svg" alt="icon"><span>Campaign</span>
+                        </div>
+                        <img src="../assets/dropdown.svg" class="dropdown-arrow" alt="arrow">
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="#">My Campaigns</a>
+                        <a href="#">Import Campaigns</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-mobile-link"><img src="../assets/asset.svg" alt="icon"><span>Asset
+                        Library</span></a>
+                <a href="#" class="nav-mobile-link"><img src="../assets/supplier.svg" alt="icon"><span>Supplier
+                        Hub</span></a>
+            </div>
+            <div class="nav-mobile-footer">
+                <div class="nav-mobile-profile">
+                    <div class="icon-pp">
+                        <img src="../assets/USER-white.svg" alt="user icon">
+                    </div>
+                    <span>Jane Doe</span>
+                </div>
+                <button class="nav-mobile-logout">Logout</button>
+            </div>
+        </div>
+    </aside>
+    <main class="main-content">
+        <div class="page-content-wrapper">
+            <div class="camp-manager box-15">
+                <div class="hamburger" id="hamburger" title="Open Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="title-camp">
+                    Supplier hub
+                </div>
+                <div class="header-cart-icon">
+                    <img src="../assets/Icon%20material-outline-shopping-cart.svg" alt="cart">
+                </div>
+                <div class="shortcut fav-ic hb-767">
+                    <div class="fav-ic">
+                        <div class="icons">
+                            <img src="../assets/-bell.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="fav-ic">
+                        <div class="icons">
+                            <img src="../assets/pin.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="fav-ic">
+                        <div class="icons">
+                            <img src="../assets/Icon material-outline-shopping-cart.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="fav-ic">
+                        <div class="icons">
+                            <img src="../assets/help-outline.svg" alt="">
+                        </div>
+                    </div>
+
+
+
+                    <div class="fav-ic">
+                        <div class="icons">
+                            <img src="../assets/Icon akar-newspaper.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-main-box-supplier">
+            <!-- BOX 1  -->
+            <div class="grid-box-supplier">
+                <div class="grid-box grid-box-300 normal-with-btn">
+                    <div class="grid-box-details">
+                        <h3>Create Order</h3>
+                        <p>Order by 12 PM Monday for Thursday dispatch/Friday delivery. Order by 12 PM Thursday for
+                            Monday dispatch/Tuesday delivery.</p>
+                    </div>
+
+
+                    <div class="order-status-footer">
+                        <div class="order-status-icon-wrapper">
+                            <img src="icons/plus-ic.svg" alt="package icon">
+                        </div>
+                        <a href="#" class="order-status-view-btn">
+                            <span>View</span>
+                            <img src="icons/ic-arrow-right.svg" alt="right arrow">
+                        </a>
+                    </div>
+                </div>
+                <!-- BOX 1 END -->
+                <!-- bX 2 -->
+                <div class="grid-box grid-box-300">
+                    <div class="grid-box-details">
+                        <h3>Order status</h3>
+                        <p>Check status of current & upcoming orders/campaigns</p>
+                    </div>
+                    <div class="line-in-grid"></div>
+                    <div class="order-status-stats">
+                        <div>
+                            <p>Pending Library Orders</p>
+                            <p class="status-number green-text">1</p>
+                        </div>
+                        <div>
+                            <p>New Campaigns</p>
+                            <p class="status-number red-text">2</p>
+                        </div>
+                    </div>
+                    <div class="order-status-footer">
+                        <div class="order-status-icon-wrapper">
+                            <img src="icons/order_status.svg" alt="package icon">
+                        </div>
+                        <a href="#" class="order-status-view-btn">
+                            <span>View</span>
+                            <img src="icons/ic-arrow-right.svg" alt="right arrow">
+                        </a>
+                    </div>
+                </div>
+                <!-- BOX 2 END -->
+
+
+                <!-- box 3 -->
+                <div class="grid-box grid-box-300 normal-with-btn">
+                    <div class="grid-box-details">
+                        <h3>Quick Order</h3>
+                        <p>Place a quick order for POS if you know all the item codes you would like to order</p>
+                    </div>
+
+
+                    <div class="order-status-footer">
+                        <div class="order-status-icon-wrapper thunder-icon-light-pink">
+                            <img src="icons/thunder.svg" alt="package icon">
+                        </div>
+                        <a href="#" class="order-status-view-btn">
+                            <span>Order now</span>
+                            <img src="icons/ic-arrow-right.svg" alt="right arrow">
+                        </a>
+                    </div>
+                </div>
+                <!-- box 4 -->
+                <!--  -->
+                <div class="grid-box grid-box-300">
+                    <div class="grid-box-details">
+                        <h3>Remove & destory</h3>
+                        <p>Items to Remove From Display</p>
+                    </div>
+                    <div class="line-in-grid"></div>
+                    <div class="order-status-stats">
+                        <div>
+                            <p>No. Of reports </p>
+                            <p class="status-number green-text">1</p>
+                        </div>
+                        <div>
+                            <p>Qty Not Actioned</p>
+                            <p class="status-number red-text">2</p>
+                        </div>
+                    </div>
+                    <div class="order-status-footer">
+                        <div class="order-status-icon-wrapper remove-destory-icon-wrapper">
+                            <img src="icons/Icon material-delete.svg" alt="package icon">
+                        </div>
+                        <a href="#" class="order-status-view-btn">
+                            <span>View report</span>
+                            <img src="icons/ic-arrow-right.svg" alt="right arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-box-supplier grid-box-supplier-1">
+                <!-- box 5 -->
+                <div class="grid-box grid-box-300 normal-with-btn store-profile">
+                    <div class="grid-box-details">
+                        <h3>Store Profile</h3>
+                        <p>View & update your store profile, so you receive the correct POS for your campaigns</p>
+                    </div>
+                    <strong style="line-height: 48px;">
+                        Last Update
+                    </strong>
+
+
+                    <div class="order-status-footer">
+                        <div class="order-status-icon-wrapper">
+                            <img src="icons/storeProfile.svg" alt="package icon">
+                        </div>
+                        <a href="#" class="order-status-view-btn">
+                            <span>View</span>
+                            <img src="icons/ic-arrow-right.svg" alt="right arrow">
+                        </a>
+                    </div>
+                </div>
+                <!-- BOX 6 -->
+<div class="grid-box pending-orders-card">
+    <h3>Pending orders</h3>
+    <div class="line-in-grid"></div>
+
+    <table class="pending-orders-table">
+        <thead>
+            <tr>
+                <th>Item Code</th>
+                <th>Item code</th>
+                <th>Element type</th>
+                <th>Qty</th>
+            </tr>
+        </thead>
+        <tbody>
+            </tbody>
+    </table>
+
+    <div class="order-status-footer">
+        <div class="order-status-icon-wrapper">
+            <img src="icons/Pending_order.svg" alt="pending orders icon" class="package-icon">
+        </div>
+        <a href="#" class="order-status-view-btn">
+            <span>View</span>
+            <img src="icons/ic-arrow-right.svg" alt="right arrow">
+        </a>
+    </div>
+</div>
+
+<!-- box 7 -->
+    <div class="grid-box store-guides-card">
+    <div class="store-guides-header">
+        <h3>Store Guides</h3>
+        <p>What Good Looks Like Guides</p>
+    </div>
+
+    <table class="store-guides-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Link</th>
+                <th class="action-column">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Shop Front Planogram</td>
+                <td>www.demoretaildam.com/123</td>
+                <td class="action-column">
+                    <img src="icons/Icon material-round-file-upload.svg" alt="action icon">
+                </td>
+            </tr>
+            <tr>
+                <td>Shop Front Planogram</td>
+                <td>www.demoretaildam.com/123</td>
+                <td class="action-column">
+                    <img src="icons/Icon material-round-file-upload.svg" alt="action icon">
+                </td>
+            </tr>
+            <tr>
+                <td>Shop Front Planogram</td>
+                <td>www.demoretaildam.com/123</td>
+                <td class="action-column">
+                    <img src="icons/Icon material-round-file-upload.svg" alt="action icon">
+                </td>
+            </tr>
+            <tr>
+                <td>Shop Front Planogram</td>
+                <td>www.demoretaildam.com/123</td>
+                <td class="action-column">
+                     <img src="icons/Icon material-round-file-upload.svg" alt="action icon">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="store-guides-footer">
+        <a href="#" class="view-guidelines-btn">
+            <span>View Guidelines</span>
+            <img src="icons/ic-arrow-right.svg" alt="right arrow">
+        </a>
+    </div>
+</div>
+<!-- end -->
+            </div>
+                            
+            </div>
+            <!--  -->
+
+            <!--  -->
+    </main>
+    <script src="../script.js"></script>
+</body>
+
+</html>
