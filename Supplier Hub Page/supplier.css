@@ -16,9 +16,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 324px;
     row-gap: 24px;
-    /* New, smaller vertical gap */
     column-gap: 24px;
-    /* Existing horizontal gap */
 }
 
 
@@ -66,7 +64,7 @@
 }
 
 
-/* Styles for Order Status Card */
+
 .order-status-stats {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -152,13 +150,6 @@
     width: 40px !important;
 }
 
-/*
- * Styles for Pending Orders Card
- * Relies on existing styles for .grid-box, .line-in-grid, and .order-status-footer
-*/
-/*
- * Styles for Pending Orders Card (Table Version)
-*/
 .pending-orders-card {
     height: 300px;
     padding-bottom: 80px;
@@ -172,13 +163,10 @@
     font-weight: 600;
 }
 
-/* New Table Styles */
 .pending-orders-table {
     width: 100%;
     margin-top: 8px;
-    /* Space between line and table headers */
     border-collapse: collapse;
-    /* Removes default table spacing */
 }
 
 .pending-orders-table th {
@@ -187,18 +175,14 @@
     font-weight: 600;
     color: #3F629D;
     text-align: left;
-    /* Aligns header text to the left */
 }
 
-/* Ensures the body has a minimum height, even when empty */
 .pending-orders-table tbody {
     min-height: 40px;
     display: block;
-    /* Allows min-height to work on tbody */
 }
 
 
-/* Reused Footer Styles (no changes needed here) */
 .pending-orders-card .order-status-icon-wrapper,
 .store-profile .order-status-icon-wrapper {
     top: 36px !important;
@@ -214,10 +198,6 @@
 
 /* Box 7 Store */
 
-/*
- * Styles for Store Guides Card
- * Assumes .grid-box has position:relative
-*/
 
 .store-guides-card {
     height: auto;
@@ -246,9 +226,7 @@
 .store-guides-table th,
 .store-guides-table td {
     padding: 6px 4px;
-    /* Vertical and horizontal padding */
     border-bottom: 1px solid #EEEEEE;
-    /* Separator line between rows */
     text-align: left;
 }
 
@@ -258,12 +236,10 @@
     font-size: 14px;
     padding-top: 0;
     border-bottom-width: 2px;
-    /* Makes the header line thicker */
 }
 
 .store-guides-table tbody tr:last-child td {
     border-bottom: none;
-    /* Removes the line from the very last row */
 }
 
 .store-guides-table td {
@@ -281,12 +257,10 @@
     height: 14px;
 }
 
-/* New Footer Style */
 .store-guides-footer {
     position: absolute;
     bottom: 25px;
     right: 40px;
-    /* Aligns with the card's right padding */
 }
 
 .view-guidelines-btn {
@@ -307,7 +281,7 @@
 .supplier-hub-right-column {
     display: flex;
     flex-direction: column;
-    gap: 24px; /* This matches the gap you use elsewhere */
+    gap: 24px; 
     justify-content: space-between;
 }
 
