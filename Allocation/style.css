@@ -1,0 +1,220 @@
+.allocation-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem
+}
+
+.allocation-pills {
+    display: flex;
+    gap: 1rem
+}
+
+.pill-btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer
+}
+
+.pill-btn.active {
+    background-color: #1c3258;
+    color: #fff;
+    border-color: #1c3258
+}
+
+.price-info {
+    display: flex;
+    gap: 2rem;
+    font-size: 14px
+}
+
+.price-info strong {
+    color: #1c3258
+}
+
+.allocation-table {
+    width: 100%
+}
+
+.allocation-table-header,
+.main-row {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr) 50px;
+    gap: 16px;
+    align-items: center;
+    padding: 12px 16px;
+    font-weight: 600
+}
+
+.allocation-table-header {
+    background-color: #f8f9fa;
+    color: #495057;
+    border-radius: 8px
+}
+
+.allocation-table-body {
+    max-height: 55vh;
+    overflow-y: auto;
+    padding-right: 8px
+}
+
+.allocation-table-body::-webkit-scrollbar {
+    width: 6px
+}
+
+.allocation-table-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px
+}
+
+.allocation-table-body::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px
+}
+
+.allocation-table-body::-webkit-scrollbar-thumb:hover {
+    background: #aaa
+}
+
+.table-row-group {
+    border: 1px solid rgba(111, 111, 111, .3);
+    border-radius: 5px;
+    margin-top: 8px
+}
+
+.main-row {
+    font-weight: 400
+}
+
+.data-cell input[type=text] {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center
+}
+
+.expand-cell {
+    display: flex;
+    justify-content: center
+}
+
+.expand-btn {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative
+}
+
+.expand-btn::before {
+    content: 'v';
+    font-family: monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .3s ease
+}
+
+.expand-btn.open::before {
+    transform: translate(-50%, -50%) rotate(180deg)
+}
+
+.sub-table-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-out, padding .4s ease-out;
+    margin-left: 8rem
+}
+
+.sub-table-container.open {
+    max-height: 500px;
+    padding: 16px
+}
+
+.sub-table-container table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+.sub-table-container td,
+.sub-table-container th {
+    text-align: left;
+    padding: 8px
+}
+
+.sub-table-container th {
+    color: #495057;
+    font-weight: 600
+}
+
+.allocation-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.table-scroll-container {
+    width: 100%;
+    overflow-x: auto
+}
+
+.allocation-table {
+    min-width: 1200px;
+    width: 100%
+}
+
+.allocation-table-body::-webkit-scrollbar {
+    width: 8px
+}
+
+.allocation-table-body::-webkit-scrollbar-track {
+    background: #eef0f8;
+    border-radius: 10px
+}
+
+.allocation-table-body::-webkit-scrollbar-thumb {
+    background-color: #1c3258;
+    border-radius: 10px;
+    border: 2px solid #eef0f8
+}
+
+.allocation-table-body::-webkit-scrollbar-thumb:hover {
+    background-color: #334769
+}
+
+.table-scroll-container::-webkit-scrollbar {
+    height: 8px
+}
+
+.table-scroll-container::-webkit-scrollbar-track {
+    background: #eef0f8;
+    border-radius: 10px
+}
+
+.table-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #1c3258;
+    border-radius: 10px;
+    border: 2px solid #eef0f8
+}
+
+.table-scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #334769
+}
+
+@media (max-width:1100px) {
+    .details-header {
+        margin-top: 1.5rem !important;
+        flex-direction: row !important
+    }
+
+    .allocation-controls {
+        display: none
+    }
+}

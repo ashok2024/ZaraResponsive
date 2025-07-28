@@ -234,4 +234,8 @@
         display: flex;
         gap: 1rem
     }
+
+    .form-field input, .form-field select{
+        width: 100% !important;
+    }
 }

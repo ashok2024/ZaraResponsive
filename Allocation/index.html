@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Allocation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../FileUpload/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../CampaignDetail/style.css">
+</head>
+
+<body>
+    <aside>
+        <nav id="desktopNav" class="navigation">
+
+            <div class="nav-collapsed-view">
+                <img src="../assets/logo.svg" alt="ZARA Icon" class="nav-logo-collapsed">
+
+                <a href="#" id="nav-expand-btn" class="icon-light-bg" title="Expand Menu">
+                    <img src="../assets/home.png" alt="home icon">
+                </a>
+
+                <div class="icon-light-bg user-icon">
+                    <img src="../assets/user.png" alt="user icon">
+                </div>
+            </div>
+
+            <div class="nav-expanded-view">
+                <div class="nav-header">
+                    <img src="../assets/logo.svg" alt="ZARA Logo" id="nav-collapse-btn" class="nav-logo-expanded"
+                        title="Collapse Menu">
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">
+                        <img src="../assets/dashboard.svg" alt="dashboard icon">
+                        <span>Dashboard</span>
+                    </a>
+                    <div class="nav-dropdown">
+                        <div class="dropdown-toggle">
+                            <div class="dropdown-title">
+                                <img src="../assets/campagin.svg" alt="campaign icon">
+                                <span>Campaign</span>
+                            </div>
+                            <img src="../assets/dropdown.svg" class="dropdown-arrow" alt="arrow">
+                        </div>
+                        <div class="dropdown-menu">
+                            <a href="#">My Campaigns</a>
+                            <a href="#">Import Campaigns</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link">
+                        <img src="../assets/asset.svg" alt="asset icon">
+                        <span>Asset Library</span>
+                    </a>
+                    <a href="/Supplier Hub Page/index.html" class="nav-link">
+                        <img src="../assets/supplier.svg" alt="supplier icon">
+                        <span>Supplier Hub</span>
+                    </a>
+                </div>
+                <div class="nav-footer">
+                    <div class="nav-profile">
+                        <div class="icon-pp">
+                            <img src="../assets/USER-white.svg" alt="user icon">
+                        </div>
+                        <span>Jane Doe</span>
+                    </div>
+                    <button class="nav-logout">Logout</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="navMobile">
+            <div class="nav-mobile-header">
+                <img src="../assets/logo.svg" alt="logo" class="nav-mobile-logo">
+                <span class="nav-mobile-close" title="Close Menu">&times;</span>
+            </div>
+            <div class="nav-mobile-links">
+                <a href="#" class="nav-mobile-link"><img src="../assets/dashboard.svg"
+                        alt="icon"><span>Dashboard</span></a>
+                <div class="nav-mobile-dropdown">
+                    <div class="dropdown-toggle">
+                        <div class="dropdown-title"><img src="../assets/campagin.svg" alt="icon"><span>Campaign</span>
+                        </div>
+                        <img src="../assets/dropdown.svg" class="dropdown-arrow" alt="arrow">
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="#">My Campaigns</a>
+                        <a href="#">Import Campaigns</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-mobile-link"><img src="../assets/asset.svg" alt="icon"><span>Asset
+                        Library</span></a>
+                <a href="#" class="nav-mobile-link"><img src="../assets/supplier.svg" alt="icon"><span>Supplier
+                        Hub</span></a>
+            </div>
+            <div class="nav-mobile-footer">
+                <div class="nav-mobile-profile">
+                    <div class="icon-pp">
+                        <img src="../assets/USER-white.svg" alt="user icon">
+                    </div>
+                    <span>Jane Doe</span>
+                </div>
+                <button class="nav-mobile-logout">Logout</button>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div class="page-content-wrapper">
+
+            <div class="camp-manager box-15">
+                <div class="hamburger" id="hamburger" title="Open Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="title-camp">
+                    Campaign Manager <span><img class="right-arrow"
+                            src="../FileUpload/icon/material-round-keyboard-arrow-right.svg" alt=""></span>
+                    <span class="current-open-title">Clearance Event, Campaign Ref: 1806</span>
+                </div>
+                <div class="shortcut fav-ic hb-767">
+                </div>
+            </div>
+
+            <div class="main-content-bx">
+                <div class="allocation-wrapper">
+                    <div class="allocation-header">
+                        <div class="barnavigation-with-button">
+                            <div class="camp-manager-links">
+                                <nav>
+                                    <ul>
+                                        <li><a href="../CampaignDetail/index.html">Details</a></li>
+                                        <li><a href="#" class="active">Allocation</a></li>
+                                        <li><a href="#">Elements</a></li>
+                                        <li><a href="#">Stores</a></li>
+                                        <li><a href="../FileUpload/index.html">Files</a></li>
+                                        <li><a href="#">Price</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="details-header">
+                                <button class="details-header-btn"><img
+                                        src="../CampaignDetail/icon/Icon akar-download.svg" alt="">Export
+                                    campaign list</button>
+                                <button class="details-header-btn primary"><img
+                                        src="../CampaignDetail/icon/ic-add-blue.svg" alt="">Add
+                                    campaign list</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="allocation-controls">
+                        <div class="allocation-pills">
+                            <button class="pill-btn active">By Item</button>
+                            <button class="pill-btn">By Site</button>
+                        </div>
+
+                        <div class="price-info">
+                            <span>Production Price : <strong>£459.08</strong></span>
+                            <span>Campaign Lost : <strong>£0.00</strong></span>
+                            <span>Total Price : <strong>£459.08</strong></span>
+                        </div>
+                    </div>
+                    <div class="table-scroll-container">
+                        <div class="allocation-table">
+                            <div class="allocation-table-header">
+                                <div class="header-cell">Element code</div>
+                                <div class="header-cell">Element Description</div>
+                                <div class="header-cell">Element Type</div>
+                                <div class="header-cell">Sites</div>
+                                <div class="header-cell">Allocated qty</div>
+                                <div class="header-cell">Overs%</div>
+                                <div class="header-cell">Overs qty</div>
+                                <div class="header-cell">Total Qty</div>
+                                <div class="header-cell">Price</div>
+                                <div class="header-cell">CO2e</div>
+                                <div class="header-cell"></div>
+                            </div>
+                            <div class="allocation-table-body">
+                                <div class="table-row-group">
+                                    <div class="main-row">
+                                        <div class="data-cell" data-label="Element code">222572</div>
+                                        <div class="data-cell" data-label="Element Description">Clearance</div>
+                                        <div class="data-cell" data-label="Element Type">A0 Poster</div>
+                                        <div class="data-cell" data-label="Sites">10</div>
+                                        <div class="data-cell" data-label="Allocated qty">33</div>
+                                        <div class="data-cell" data-label="Overs%"><input type="text" value="5.00">
+                                        </div>
+                                        <div class="data-cell" data-label="Overs qty"><input type="text" value="5.00">
+                                        </div>
+                                        <div class="data-cell" data-label="Total Qty">35</div>
+                                        <div class="data-cell" data-label="Price">£ 174.65</div>
+                                        <div class="data-cell" data-label="CO2e">1.76</div>
+                                        <div class="data-cell expand-cell"><button class="expand-btn"></button></div>
+                                    </div>
+                                    <div class="sub-table-container">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Number</th>
+                                                    <th>Name</th>
+                                                    <th>Contact Name</th>
+                                                    <th>Contact Number</th>
+                                                    <th>City</th>
+                                                    <th>Country</th>
+                                                    <th>Qty</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>101</td>
+                                                    <td>London store</td>
+                                                    <td>Jane doe</td>
+                                                    <td>+61-098765432</td>
+                                                    <td>London</td>
+                                                    <td>United Kingdom</td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>101</td>
+                                                    <td>London store</td>
+                                                    <td>Jane doe</td>
+                                                    <td>+61-098765432</td>
+                                                    <td>London</td>
+                                                    <td>United Kingdom</td>
+                                                    <td>10</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="table-row-group">
+                                    <div class="main-row">
+                                        <div class="data-cell" data-label="Element code">222572</div>
+                                        <div class="data-cell" data-label="Element Description">Clearance</div>
+                                        <div class="data-cell" data-label="Element Type">A0 Poster</div>
+                                        <div class="data-cell" data-label="Sites">10</div>
+                                        <div class="data-cell" data-label="Allocated qty">33</div>
+                                        <div class="data-cell" data-label="Overs%"><input type="text" value="5.00">
+                                        </div>
+                                        <div class="data-cell" data-label="Overs qty"><input type="text" value="5.00">
+                                        </div>
+                                        <div class="data-cell" data-label="Total Qty">35</div>
+                                        <div class="data-cell" data-label="Price">£ 174.65</div>
+                                        <div class="data-cell" data-label="CO2e">1.76</div>
+                                        <div class="data-cell expand-cell"><button class="expand-btn"></button></div>
+                                    </div>
+                                    <div class="sub-table-container">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Number</th>
+                                                    <th>Name</th>
+                                                    <th>Contact Name</th>
+                                                    <th>Contact Number</th>
+                                                    <th>City</th>
+                                                    <th>Country</th>
+                                                    <th>Qty</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>101</td>
+                                                    <td>London store</td>
+                                                    <td>Jane doe</td>
+                                                    <td>+61-098765432</td>
+                                                    <td>London</td>
+                                                    <td>United Kingdom</td>
+                                                    <td>10</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-footer">
+                        <div class="entries-info">Showing 1 to 10 of 52 entries</div>
+                        <div class="pagination">
+                            <a href="#">&lt;</a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <span>...</span>
+                            <a href="#">10</a>
+                            <a href="#">&gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../script.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
