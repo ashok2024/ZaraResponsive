@@ -948,6 +948,9 @@ body.nav-collapsed {
         height: 24px;
         cursor: pointer
     }
+    .m-auto{
+        margin: auto !important;
+    }
 
     .camp-search {
         background-color: transparent;

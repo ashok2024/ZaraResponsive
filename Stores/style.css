@@ -1,0 +1,143 @@
+/* Prevents the main page from scrolling */
+body {
+    overflow: hidden;
+}
+
+/* Stores Page Styles */
+.stores-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* Make the wrapper fill the available height of the viewport */
+    /* Adjust the 210px value based on the exact height of your header/footer/other elements */
+    height: calc(100vh - 210px); 
+}
+
+/* This container now manages the vertical space for the filters, table, and pagination */
+.box-only-1100 {
+    flex-grow: 1; /* Allows this container to fill the space in stores-wrapper */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevents children from overflowing */
+}
+
+.stores-header, .stores-filter-controls {
+    flex-shrink: 0; /* Prevent these from shrinking */
+}
+
+.stores-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 1rem;
+}
+
+.save-btn {
+    background-color: #1C3258;
+    color: #ffffff;
+}
+
+.stores-filter-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-shrink: 0; /* Ensure filters don't shrink */
+}
+
+.filter-inputs {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Table Styles */
+.table-scroll-container {
+    width: 100%;
+    flex-grow: 1; /* This makes the table container fill the available vertical space */
+    overflow-y: auto; /* Handle vertical scrollbar */
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.stores-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stores-table thead {
+    background-color: #f8f9fa;
+    position: sticky; /* Make the header stick to the top of the container */
+    top: 0;
+    z-index: 1;
+}
+
+.stores-table th,
+.stores-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #eeeeee;
+    /* Allow text to wrap naturally */
+}
+
+.stores-table th {
+    font-weight: 600;
+    color: #495057;
+}
+.stores-table th:last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stores-table td:last-child {
+    text-align: end;
+}
+
+.stores-table input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* New rule for the pagination footer */
+.table-footer {
+    flex-shrink: 0; /* Prevents the pagination from being scrolled out of view */
+    padding: 1rem;
+    border-top: 1px solid #eeeeee;
+}
+
+/* Custom Scrollbar */
+.table-scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+.table-scroll-container::-webkit-scrollbar-track {
+    background: #eef0f8;
+}
+.table-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #1c3258;
+    border-radius: 10px;
+    border: 2px solid #eef0f8;
+}
+.barnavigation-with-button{
+    margin-bottom: 0;
+}
+@media (max-width: 1100px) {
+    .save-btn{
+    display: none;
+    }
+    /* The flex properties are now outside the media query, so we only keep visual styles here */
+    .box-only-1100{
+            background-color: #fff;
+    border: 1px solid #dfe1f9;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .05);
+    }
+}
+@media (max-width: 767px) {
+    .filter-inputs{
+        flex-direction: column;
+    }
+    .stores-filter-controls{
+        align-items: baseline;
+
+    }
+}
