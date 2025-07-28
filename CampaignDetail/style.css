@@ -1,0 +1,237 @@
+.details-content-wrapper {
+    padding: px;
+    background-color: #fff;
+    border-radius: 8px
+}
+
+.details-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem
+}
+
+.details-header-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #1c3258;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #1c2358;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.details-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 3rem
+}
+
+.form-field {
+    display: flex;
+    align-items: center
+}
+
+.form-field label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    padding-right: auto;
+    font-weight: 500
+}
+
+.form-field label .required-star {
+    color: #1c3258
+}
+
+.form-field input,
+.form-field select {
+    width: 300px;
+    height: 45px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Nunito, sans-serif
+}
+
+.form-field select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right .5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem
+}
+
+.details-form-footer {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem
+}
+
+.details-form-footer-btn {
+    padding: 10px 24px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.details-form-footer-btn.save {
+    background-color: #1c3258;
+    color: #fff;
+    border-color: #1c3258
+}
+
+.barnavigation-with-button {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between
+}
+
+@media (max-width:1024px) {
+    .details-form {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (max-width:767px) {
+    .details-form {
+        grid-template-columns: 1fr
+    }
+
+    .details-header {
+        flex-direction: column;
+        align-items: stretch
+    }
+}
+
+@media (max-width:1024px) {
+    .details-form {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (max-width:767px) {
+    .details-form {
+        grid-template-columns: 1fr
+    }
+
+    .details-header {
+        flex-direction: column;
+        align-items: stretch
+    }
+}
+
+.form-field {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 16px
+}
+
+.form-field label {
+    margin-bottom: 0
+}
+
+@media (min-width:1100px) and (max-width:1440px) {
+    .details-form {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (max-width:1100px) {
+    .details-form {
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        bottom: 68px
+    }
+
+    .main-content-bx {
+        border: none;
+        box-shadow: none;
+        border-radius: 12px;
+        padding: 4px
+    }
+
+    .barnavigation-with-button {
+        border: 1px solid #dfe1f9;
+        border-radius: 15px;
+        padding: 1.5rem;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .05)
+    }
+
+    .details-form {
+        border: 1px solid #dfe1f9;
+        border-radius: 15px;
+        padding: 1.5rem;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .05)
+    }
+
+    .details-header {
+        flex-direction: column;
+        align-items: stretch
+    }
+
+    .details-header-btn {
+        flex-shrink: 1;
+        min-width: 128px;
+        white-space: nowrap
+    }
+
+    .barnavigation-with-button {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        padding-bottom: 1.5rem;
+        margin-bottom: 6rem;
+        border-bottom: 1px solid #eee;
+        justify-content: space-between
+    }
+
+    .details-header {
+        position: absolute;
+        top: 100%;
+        right: 2rem;
+        margin-top: 3.5rem;
+        display: flex;
+        gap: 1rem
+    }
+}
+
+@media (max-width:880px) {
+    .details-form {
+        bottom: 0;
+        top: 2rem
+    }
+
+    .details-header {
+        width: 100%
+    }
+
+    .details-header-btn {
+        display: flex;
+        justify-content: center
+    }
+
+    .details-header {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        margin-top: 1.5rem;
+        display: flex;
+        gap: 1rem
+    }
+}
