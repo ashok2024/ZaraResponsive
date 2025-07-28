@@ -1,0 +1,57 @@
+body {
+    overflow: hidden
+}
+
+.box-only-1100 {
+    overflow: hidden
+}
+
+.stores-filter-controls,
+.stores-header {
+    flex-shrink: 0
+}
+
+#element-search {
+    height: 22.5px;
+    border: none;
+    border-bottom: 1px solid #6f6f6f
+}
+
+.table-img-button {
+    background: 0 0;
+    border: none;
+    display: flex;
+    margin: auto
+}
+
+.table-scroll-container {
+    flex-grow: 1;
+    overflow: auto !important
+}
+
+.stores-table {
+    border-collapse: collapse
+}
+
+.stores-table thead {
+    position: sticky
+}
+
+.stores-table td,
+.stores-table th {
+    white-space: nowrap;
+    text-align: center !important
+}
+
+.stores-table td:last-child {
+    text-align: center !important
+}
+
+.table-footer {
+    flex-shrink: 0
+}
+
+.table-scroll-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
